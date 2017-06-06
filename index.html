@@ -20,10 +20,10 @@
 						<!-- quescon -->
 						<div class="quescon" ng-repeat="x in quesdata">
 							<div class="question-tit">
-								<span class="num" data-num="{{x.num}}">{{x.num}}</span>
-								<span class="label label-primary">{{x.bigclassify}}</span>
-								<span class="label label-warning">{{x.kind}}</span>
-								<span class="question-text">{{x.question}}</span>
+								<span class="num" data-num="{{x.num}}" ng-bind="x.num"></span>
+								<span class="label label-primary" ng-bind="x.bigclassify"></span>
+								<span class="label label-warning" ng-bind="x.kind"></span>
+								<span class="question-text" ng-bind="x.question"></span>
 
 							</div>
 							<ul class="answer-con">
@@ -34,7 +34,7 @@
 								<li ng-if="x.answere">E. {{x.answere}}</li>
 							</ul>
 
-							<div class="rightanswer">正确答案：<span>{{x.right}}</span></div>
+							<div class="rightanswer">正确答案：<span ng-bind="x.right"></span></div>
 						</div>
 						<!-- quescon  end-->
 
