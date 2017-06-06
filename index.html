@@ -6,92 +6,15 @@
 		<title>题目</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<style type="text/css">
-			html,
-			body {
-				height: 100%;
-			}
-			
-			body {
-				margin: 0;
-				padding: 0;
-				font-family: "Microsoft Yahei", Arial, sans-serif;
-				/*background: #f4f4f4;*/
-			}
-			
-			table,
-			td,
-			tr,
-			th {
-				font-size: 12px;
-			}
-			
-			ol,
-			ul {
-				list-style: none;margin: 0; padding: 0;
-			}
-			
-			li {
-				list-style-type: none;
-			}
-			
-			address,
-			cite,
-			code,
-			em,
-			th,
-			i {
-				font-weight: normal;
-				font-style: normal;
-			}
-			
-			.hx a,
-			.hx em,
-			.fB {
-				font-weight: bold;
-			}
-			
-			a {
-				outline: none;
-				blr: expression(this.onFocus=this.blur());
-			}
-			
-			a:focus {
-				outline: none;
-			}
-			
-			.quescon {
-				margin-bottom: 30px;
-			}
-			
-			.question-tit {
-				line-height: 35px;
-				font-size: 18px;
-			}
-			
-			.answer-con>li {
-				margin-top: 15px;
-				font-size: 16px;
-			}
-			
-			.rightanswer {
-				background: #e8e8e8;
-				font-size: 15px;
-				line-height: 32px;
-				padding: 0 20px;
-				margin-top: 10px;
-			}
-			.quesnav{position: fixed;top: 0;}
-			.quesnav>li{ float: left; margin:2px 5px;}
-			.quesnav>li>a{ display: block;width: 30px;height: 24px;line-height:24px; text-align:center;font-size: 12px;   border: 1px #ccc solid; color: #000;}
-			.quesnav>li>a:hover{ background: #f0ad4e; color: #fff; text-decoration: none; border: 0;}
+			body,html{height:100%}body{margin:0;padding:0;font-family:"Microsoft Yahei",Arial,sans-serif}table,td,th,tr{font-size:12px}ol,ul{list-style:none;margin:0;padding:0}li{list-style-type:none}address,cite,code,em,i,th{font-weight:400;font-style:normal}.fB,.hx a,.hx em{font-weight:700}a{outline:0;blr:expression(this.onFocus=this.blur())}a:focus{outline:0}.quescon{margin-bottom:30px}.wrap100{width:100%;padding:0 20px}.question-tit{line-height:35px;font-size:18px}.answer-con>li{margin-top:15px;font-size:17px}.rightanswer{background:#e8e8e8;font-size:18px;line-height:32px;padding:0 20px;margin-top:10px}.quesnav{position:fixed;top:0}.quesnav>li{float:left;margin:2px 5px}.quesnav>li>a{display:block;width:30px;height:24px;line-height:24px;text-align:center;font-size:12px;border:1px #ccc solid;color:#000}.quesnav>li>a:hover{background:#f0ad4e;color:#fff;text-decoration:none;border:0}
 		</style>
 	</head>
 
 	<body ng-app="myApp">
 
-		<div class="container">
-			<div class="row" ng-controller="siteCtrl">
-				<div class="col-xs-12">
+		<div class="wrap100">
+			<div ng-controller="siteCtrl">
+				<div>
 				<div class="panel panel-default" >
 					<div class="panel-body">
 						<!-- quescon -->
@@ -127,7 +50,7 @@
 			</div>
 		</div>
 
-		<script src="js/jquery-1.10.1.min.js"></script>
+		<!--<script src="js/jquery-1.10.1.min.js"></script>-->
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript">
 			var app = angular.module('myApp', []);
