@@ -14,7 +14,7 @@
 	<body ng-app="myApp">
 		
 		<div class="container">
-			<h4 style="color: red;">数据较多，耐心等待一分钟；建议使用谷歌浏览器浏览</h4>
+			<h4 style="color: red;">数据较多，请耐心等待两分钟</h4>
 			<div ng-controller="siteCtrl">
 				<div class="col-xs-12">
 						<!-- quescon -->
@@ -27,11 +27,11 @@
 
 							</div>
 							<ul class="answer-con">
-								<li ng-if="x.answere">A. {{x.answera}}</li>
-								<li  ng-if="x.answere">B. {{x.answerb}}</li>
-								<li  ng-if="x.answere">C. {{x.answerc}}</li>
-								<li  ng-if="x.answere">D. {{x.answerd}}</li>
-								<li ng-if="x.answere">E. {{x.answere}}</li>
+								<li ng-if="x.answera">A. <span ng-bind="x.answera"></span></li>
+								<li  ng-if="x.answerb">B. <span ng-bind="x.answerb"></span></li>
+								<li  ng-if="x.answerc">C. <span ng-bind="x.answerc"></span></li>
+								<li  ng-if="x.answerd">D. <span ng-bind="x.answerd"></span></li>
+								<li ng-if="x.answere">E. <span ng-bind="x.answere"></span></li>
 							</ul>
 
 							<div class="rightanswer">正确答案：<span ng-bind="x.right"></span></div>
